@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+*{
+  font-family: 'Manjari', sans-serif;
+}
+
+nav{
+  margin-bottom: 40px;
+}
+.marginFix{
+  margin: -0.48rem 0 .912rem 0
+}
+
+.card{
+  border: 2px solid black;
+}
+
+.card.medium {
+  height: 420px;
+}
