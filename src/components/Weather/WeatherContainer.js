@@ -108,17 +108,7 @@ export default class WeatherContainer extends React.Component {
         }
     }
 
-    removeFavorite = (name) => {
-        if(localStorage.length !== 0){
-            let allFavorites = this.state.favorites.filter(favorite => {
-                return favorite !== name;
-            })
-            this.setState({
-                favorites: allFavorites
-            })
-            localStorage.removeItem('Favorites', JSON.stringify(allFavorites));
-        }
-    }
+
 
     render() {
         return (
@@ -126,7 +116,7 @@ export default class WeatherContainer extends React.Component {
             <Search search={this.handleSearch}/>
             <Weather weather={this.state.Weather} temp={this.state.Temp} description={this.state.WeatherDescription} setFavorite={this.addFavorite}/>
             <WeatherList moreInfo={this.state.MoreInfo}/>
-            <Favorites getFavorite={this.getFavorite} favorites={this.state.favorites} removeFavorite={this.removeFavorite}/>
+            <Favorites getFavorite={this.getFavorite} favorites={this.state.favorites}/>
             </div>
         )
     }

@@ -8,7 +8,7 @@ export default class Weather extends React.Component{
             <div className="row">
                 <div className="card medium blue-grey darken-1">
                     <div className="card-content">
-                        <h1 className="orange-text">Din Position</h1>
+                        <h1 className="orange-text">Aktuellt Väder</h1>
                         <hr/>
                         <h3 className="white-text">{this.props.weather.name}</h3>
                         <h6 className="white-text marginFix"><Clock/></h6>
