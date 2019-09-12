@@ -7,7 +7,7 @@ export default class Nav extends React.Component {
             <div>
             <nav className="blue-grey darken-1">
                 <div className="nav-wrapper container ">
-                <NavLink to="#" className="brand-logo">Williams Weather</="#">
+                <NavLink to="#" className="brand-logo">Williams Weather</NavLink>
                 
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li><NavLink to="#">Home</NavLink></li>
